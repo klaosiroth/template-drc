@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: rgb(234,242,255);
+}
+
+.site-header {
+  position: relative;
+
+  .container {
+    width: 95%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo  {
+    padding: 0.9375em;
+    padding-left: 1.125em;
+    background: #fff;
+    border: 0px solid rgba(0, 32, 76, 1);
+    border-radius: 20px;
+    box-shadow: (6.43px 7.66px 10px 0px rgba(167,0,250,0.1)); // 0 1px 4px rgba(0,0,0,.6)
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+      object-fit: cover;
+      object-position: 50% 50%;
+      vertical-align: middle;
+    }
+
+    span {
+      color: rgb(0, 32, 36);
+      font-family: 'Suez One', serif;
+      font-size: 21px;
+      margin-left: .5em;
+      vertical-align: middle;
+    }
+  }
+
+  &__menu {
+    margin-left: auto;
+
+    ul {
+      display: flex;
+      list-style: none;
+      padding-left: 0;
+      margin: 40px 0;
+    }
+
+    li {
+      padding: 0 1rem;
+    }
+
+    a {
+      display: inline-block;
+      font: normal normal bold 14px/60px 'open sans',sans-serif;
+      text-decoration: none;
+      color: #00204c;
+      transition: color .4s ease 0s;
+
+      &.current-link,
+      &:hover {
+        color: rgb(167,0,250);
+      }
+    }
+  }
+}

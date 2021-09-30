@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Suez+One&display=swap");
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #eaf2ff;
+}
+
+.site-header {
+  position: relative;
+}
+
+.site-header .container {
+  width: 95%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-header__logo {
+  padding: 0.9375em;
+  padding-left: 1.125em;
+  background: #fff;
+  border: 0px solid #00204c;
+  border-radius: 20px;
+  -webkit-box-shadow: 6.43px 7.66px 10px 0px rgba(167, 0, 250, 0.1);
+          box-shadow: 6.43px 7.66px 10px 0px rgba(167, 0, 250, 0.1);
+}
+
+.site-header__logo a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-header__logo img {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  vertical-align: middle;
+}
+
+.site-header__logo span {
+  color: #002024;
+  font-family: 'Suez One', serif;
+  font-size: 21px;
+  margin-left: .5em;
+  vertical-align: middle;
+}
+
+.site-header__menu {
+  margin-left: auto;
+}
+
+.site-header__menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin: 40px 0;
+}
+
+.site-header__menu li {
+  padding: 0 1rem;
+}
+
+.site-header__menu a {
+  display: inline-block;
+  font: normal normal bold 14px/60px 'open sans',sans-serif;
+  text-decoration: none;
+  color: #00204c;
+  -webkit-transition: color .4s ease 0s;
+  transition: color .4s ease 0s;
+}
+
+.site-header__menu a.current-link, .site-header__menu a:hover {
+  color: #a700fa;
+}
+/*# sourceMappingURL=main.css.map */
