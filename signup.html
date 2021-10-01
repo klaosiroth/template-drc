@@ -21,8 +21,8 @@
       </button>
       <nav class="site-header__menu">
         <ul>
-          <li><a href="index.html" class="current-link">เข้าสู่ระบบ</a></li>
-          <li><a href="signup.html">ลงทะเบียน</a></li>
+          <li><a href="index.html">เข้าสู่ระบบ</a></li>
+          <li><a href="signup.html" class="current-link">ลงทะเบียน</a></li>
           <li><a href="reset-password.html">ลืมรหัสผ่าน</a></li>
         </ul>
       </nav>
@@ -31,20 +31,38 @@
 
   <main class="site-main">
     <div class="container">
-      <div class="card">
-        <h2>Sign In</h2>
-        <p>Don't have an account? <a href="signup.html">Sign up here</a>.</p>
-        <form id="signin" class="form-control">
-          <div>
+      <div class="card register">
+        <h2>Create New User</h2>
+        <p>Already have an account? <a href="#">Sign in here</a>.</p>
+        <form id="signin" class="form-control register__control">
+          <div class="register__firstname required">
+            <label for="firstname">First name</label>
+            <input type="text" name="firstname" id="firstname" required>
+          </div>
+          <div class="register__lastname required">
+            <label for="lastname">Last name</label>
+            <input type="text" name="lastname" id="lastname" required>
+          </div>
+          <div class="register__email required">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email" required>
           </div>
-          <div>
+          <div class="register__phone">
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone">
+          </div>
+          <div class="register__password required">
             <label for="password">Password</label>
-            <input type="password" name="password" id="password">
+            <input type="password" name="password" id="password" required>
           </div>
-          <button type="submit">Login</button>
-          <p><a href="reset-password.html">Foget password?</a></p>
+          <div class="register__password-confirm required">
+            <label for="passwordConfirm">Confirm password</label>
+            <input type="password" name="passwordConfirm" id="passwordConfirm" required>
+          </div>
+          <div class="register__submit">
+            <p class="register__agree">By submitting signup, You agree to our Terms, Data Policy and Cookie Policy.</p>
+            <button type="submit">Sign Up</button>
+          </div>
         </form>
       </div>
     </div>
